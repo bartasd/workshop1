@@ -53,6 +53,7 @@ button {
 
 button:hover{
     box-shadow: 3px 3px 5px rgb(16, 52, 117);
+    cursor: pointer;
 }
 
 .sub{
