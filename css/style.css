@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(../fonts/fontawesome-webfont.eot);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .counter {
     display: flex;
-    background-color: blue;
+    background-color: rgb(36, 171, 175);
     width: 500px;
     height: 300px;
     margin-left: calc(50% - 250px);
@@ -9,6 +16,8 @@
     color: white;
     flex-direction: column;
     align-items: center;
+    border: solid 1px rgb(10, 104, 141);
+    box-shadow: 3px 3px 5px rgb(134, 74, 184);
 }
 
 .name{
@@ -35,11 +44,15 @@
 button {
     margin-top: 10px;
     height: 44px;
-    width: 70px;
+    width: 100px;
     border-radius: 10px;
     border-style: hidden;
     color: black;
     background-color: white;
+}
+
+button:hover{
+    box-shadow: 3px 3px 5px rgb(16, 52, 117);
 }
 
 .sub{
@@ -63,5 +76,9 @@ button {
 }
 
 .nt{
+    color: white;
+}
+
+.fa-minus, .fa-plus{
     color: white;
 }
