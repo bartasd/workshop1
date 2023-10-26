@@ -1,0 +1,15 @@
+# WORKSHOP
+
+_MY FOURTH PERSONAL FRONT-END PAGE FOR LEARNING PURPOSE_
+
+## ABOUT
+
+
+
+## PROJECT GOALS
+
+- ACCOMPLISH WORKSHOP
+
+## AUTHOR
+
+Bartas Dausynas: [Github](https://github.com/bartasd)
