@@ -1,4 +1,4 @@
-let res = "INITIAL NUMBER"
+let res = "INITIAL NUMBER";
 
 const sub = document.getElementById('s');
 const r = document.getElementById('r');
@@ -7,23 +7,17 @@ const resul = document.getElementById("res");
 
 function change(res)
 {
-    if(res > 0)
+    if(res == 0)
     {
-        if(!(resul.classList.contains('plus')))
-        {
+        if(resul.classList.contains('minus'))
             resul.classList.remove('minus');
-            resul.classList.add('plus');
-        }
-    }
-        
-    else
-    {
-        if(!(resul.classList.contains('minus')))
-        {
+        if(resul.classList.contains('plus'))
             resul.classList.remove('plus');
-            resul.classList.add('minus');
-        }
     }
+    else if(res > 0 && !(resul.classList.contains('plus')))
+        resul.classList.add('plus');
+    else if(res < 0 && !(resul.classList.contains('minus')))
+        resul.classList.add('minus');
 }
 
 sub.addEventListener('click', function onClick() {
