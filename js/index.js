@@ -7,23 +7,22 @@ const resul = document.getElementById("res");
 
 function change(res)
 {
-    if (res == "INITIAL NUMBER")
-    {
-        if(resul.classList.contains('minus'))
-            resul.classList.remove('minus');
-        if(resul.classList.contains('plus'))
-            resul.classList.remove('plus');
-    }
-    else if(res > 0)
+    if(res > 0)
     {
         if(!(resul.classList.contains('plus')))
+        {
+            resul.classList.remove('minus');
             resul.classList.add('plus');
+        }
     }
         
-    else if(res < 0)
+    else
     {
         if(!(resul.classList.contains('minus')))
+        {
+            resul.classList.remove('plus');
             resul.classList.add('minus');
+        }
     }
 }
 
@@ -37,7 +36,10 @@ sub.addEventListener('click', function onClick() {
 
 r.addEventListener('click', function onClick() {
     res = "INITIAL NUMBER";
-    change(res);
+    if(resul.classList.contains('minus'))
+        resul.classList.remove('minus');
+    if(resul.classList.contains('plus'))
+        resul.classList.remove('plus');
     resul.innerHTML = res;
 });
 
