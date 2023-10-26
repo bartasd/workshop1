@@ -9,15 +9,22 @@ function change(res)
 {
     if (res == "INITIAL NUMBER")
     {
-        if(result.classList.contains('minus'))
+        if(resul.classList.contains('minus'))
             resul.classList.remove('minus');
-        if(result.classList.contains('plus'))
+        if(resul.classList.contains('plus'))
             resul.classList.remove('plus');
     }
     else if(res > 0)
-        resul.classList.add('plus');
+    {
+        if(!(resul.classList.contains('plus')))
+            resul.classList.add('plus');
+    }
+        
     else if(res < 0)
-        resul.classList.add('minus');
+    {
+        if(!(resul.classList.contains('minus')))
+            resul.classList.add('minus');
+    }
 }
 
 sub.addEventListener('click', function onClick() {
