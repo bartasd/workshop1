@@ -53,3 +53,11 @@ button {
 .add{
     background-color: greenyellow;
 }
+
+.minus{
+    color: orangered;
+}
+
+.plus{
+    color: greenyellow;
+}
